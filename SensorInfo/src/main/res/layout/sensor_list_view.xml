@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:clickable="false"
+    android:background="@drawable/list_item_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/sensor_name"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/list_item_text" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/sensor_name"
+        android:layout_marginLeft="8dp"
+        android:focusable="false"
+        android:clickable="false">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="false"
+            android:clickable="false">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sensor_vendor"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:text="New Text"
+                android:textAlignment="viewStart"
+                android:layout_below="@+id/sensor_name"
+                android:layout_alignParentLeft="true"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:textColor="@color/list_item_text"
+                android:clickable="false"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/sensor_resolution"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textAlignment="viewEnd"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@+id/sensor_version"
+                android:layout_alignParentLeft="true"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:textColor="@color/list_item_text"
+                android:clickable="false"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:clickable="false">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sensor_version"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:text="New Text"
+                android:textAlignment="viewStart"
+                android:layout_alignLeft="@+id/sensor_vendor"
+                android:layout_below="@+id/sensor_vendor"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:textColor="@color/list_item_text"
+                android:clickable="false"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/sensor_max_range"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textAlignment="viewStart"
+                android:layout_below="@+id/sensor_resolution"
+                android:layout_alignLeft="@+id/sensor_resolution"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="@color/list_item_text" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

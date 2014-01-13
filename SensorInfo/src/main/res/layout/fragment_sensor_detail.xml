@@ -1,0 +1,38 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sensor_detail_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/sensor_name"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/sensor_vendor"
+        android:layout_below="@+id/sensor_name"
+        android:layout_alignLeft="@+id/sensor_name" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/sensor_values"
+        android:baselineAligned="false"
+        android:layout_below="@+id/sensor_vendor"
+        android:layout_alignLeft="@+id/sensor_vendor">
+
+    </LinearLayout>
+</RelativeLayout>
